@@ -47,3 +47,7 @@ code on every startup.
 
 Warning: It's strongly advised to not put all necessary secrets to log in to
 your Passbolt account in an unencrypted file on disk.
+
+To retrieve your passbolt private key file, go to
+https://<YOUR_PASSBOLT_URL>/app/settings/keys and click on Download Private Key
+at the bottom.

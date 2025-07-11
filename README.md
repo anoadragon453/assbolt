@@ -45,8 +45,9 @@ If `PASSBOLT_TOTP_SECRET` is not set and Multi-Factor Authentication (MFA) is
 enabled on your Passbolt account, you will be prompted for a six-digit TOTP
 code on every startup.
 
-Warning: It's strongly advised to not put all necessary secrets to log in to
-your Passbolt account in an unencrypted file on disk.
+> [!WARNING]
+> It's strongly advised to not put all necessary secrets to log in to
+> your Passbolt account in an unencrypted file on disk.
 
 To retrieve your passbolt private key file, go to
 https://<YOUR_PASSBOLT_URL>/app/settings/keys and click on Download Private Key

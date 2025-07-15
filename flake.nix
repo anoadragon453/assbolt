@@ -49,7 +49,7 @@
 
 	    shellHook = ''
 	      # Load environment variables from `.env`
-	      eval "$(grep -v '^#' .env | sed -E 's/^/export /')"
+	      eval "$(grep -v '^#' .env | sed -E 's/^/export /')" || exit 0
 	    '';
           };
 

@@ -45,28 +45,6 @@
               libxkbcommon
             ];
 
-            LD_LIBRARY_PATH = with pkgs; lib.makeLibraryPath [
-                # OpenGL
-                #libGL.dev
-	        #mesa
-		#mesa-gl-headers
-	        #glfw
-             
-                # X11 stack – needed if you compile with default GLFW tags
-                #xorg.libX11.dev
-                #xorg.libXi.dev
-                #xorg.libXcursor.dev
-                #xorg.libXrandr.dev
-                #xorg.libXinerama.dev
-                #xorg.libXext.dev
-                #xorg.libXrender.dev
-                #xorg.libXfixes.dev     # cursor hiding, etc.
-             
-                # Wayland support (compile with `-tags wayland`)
-                #wayland
-                #wayland-protocols
-                #libxkbcommon
-	    ];
 	    CGO_ENABLED = "1";
 
 	    shellHook = ''
